@@ -119,7 +119,7 @@ public class HashCube implements ICube, IModifableCube {
 
     @Override
     public void bulkSet(Iterator<String[]> iterator) {
-
+        throw new RuntimeException("Not implemented yet!");
     }
 
 }

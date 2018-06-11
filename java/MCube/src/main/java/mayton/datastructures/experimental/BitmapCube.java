@@ -21,6 +21,6 @@ public class BitmapCube implements ICube {
 
     @Override
     public void bulkSet(Iterator<String[]> iterator) {
-
+        throw new RuntimeException("Not implemented yet!");
     }
 }

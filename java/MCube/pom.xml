@@ -17,7 +17,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <jmh.version>1.21</jmh.version>
         <javac.target>1.8</javac.target>
-        <uberjar.name>mcube-benchmark</uberjar.name>
+        <uberjar.name>MCube-benchmark</uberjar.name>
     </properties>
 
 

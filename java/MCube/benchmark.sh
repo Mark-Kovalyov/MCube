@@ -4,4 +4,4 @@
 
 mvn clean package -P benchmark
 
-java -jar target/bencmark.jar
+java -jar target/MCube-benchmark.jar

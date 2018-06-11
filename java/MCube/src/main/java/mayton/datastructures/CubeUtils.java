@@ -6,6 +6,8 @@ import java.math.BigInteger;
 
 import static com.google.common.base.Preconditions.checkArgument;
 import static com.google.common.base.Preconditions.checkNotNull;
+import static java.lang.Math.addExact;
+import static java.lang.Math.multiplyExact;
 import static java.math.BigInteger.ONE;
 import static java.math.BigInteger.ZERO;
 import static java.math.BigInteger.valueOf;
@@ -60,8 +62,10 @@ public class CubeUtils {
         long sum = point[0];
         long k = 1L;
         for (int i = 1; i < dimensionSizes.length; i++) {
-            k = k * dimensionSizes[i - 1];
-            sum = sum + k * point[i];
+            // k = k * dimensionSizes[i - 1];
+            k = multiplyExact(k, dimensionSizes[i - 1]);
+            // sum = sum + k * point[i];
+            sum = addExact(sum, multiplyExact(k, point[i]));
         }
         return sum;
     }
